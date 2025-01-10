@@ -1,1 +1,1 @@
-# rust-template
+# base-template
