@@ -11,7 +11,6 @@ sudo apt update
 sudo add-apt-repository -y ppa:maveonair/helix-editor
 sudo apt update
 sudo apt install helix
-git remote set-url origin git@github.com:RomRakharb/base-template.git
 echo
 echo "---------------------"
 echo "install script ends"
