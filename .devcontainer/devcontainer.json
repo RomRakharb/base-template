@@ -6,7 +6,7 @@
 		"ghcr.io/devcontainers/features/rust:1": {}
 	},
 
-	 "forwardPorts": [ 8080, 12049 ],
+	 // "forwardPorts": [],
 
 	"postCreateCommand": "bash .devcontainer/install.sh",
 
@@ -15,8 +15,5 @@
     		"jetbrains" : {
       			"backend" : "RustRover"
     		}
-  	},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+  	}
 }
