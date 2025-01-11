@@ -8,7 +8,7 @@
 
 	 "forwardPorts": [ 8080, 12049 ],
 
-	"postCreateCommand": "bash ./install.sh",
+	"postCreateCommand": "bash .devcontainer/install.sh",
 
 	// Configure tool-specific properties.
   	"customizations" : {
