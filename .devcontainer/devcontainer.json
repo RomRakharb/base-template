@@ -1,20 +1,21 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Ubuntu",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:noble",
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
+	"name": "Sunminimart",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	
 	"features": {
 		"ghcr.io/devcontainers/features/rust:1": {}
 	},
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	 "forwardPorts": [ 8080, 12049 ],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": [
+		"sudo apt update && sudo apt -y upgrade",
+		"sudo apt-get install -y software-properties-common",
+		"sudo apt update",
+		"sudo add-apt-repository -y ppa:maveonair/helix-editor",
+		"sudo apt update",
+		"sudo install helix"
+	],
 
 	// Configure tool-specific properties.
   	"customizations" : {
