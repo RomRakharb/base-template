@@ -8,12 +8,5 @@
 
 	 // "forwardPorts": [],
 
-	"postCreateCommand": "bash .devcontainer/install.sh",
-
-	// Configure tool-specific properties.
-  	"customizations" : {
-    		"jetbrains" : {
-      			"backend" : "RustRover"
-    		}
-  	}
+	"postCreateCommand": "bash .devcontainer/install.sh"
 }
