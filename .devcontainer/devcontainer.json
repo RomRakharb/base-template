@@ -1,14 +1,11 @@
 {
 	"name": "base-template",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-	
 	"features": {
 		"ghcr.io/devcontainers/features/rust:1": {
-			"profile" : "default"
+			"profile": "default"
 		}
-	},
-
-	 // "forwardPorts": [],
-
-	"postCreateCommand": "bash .devcontainer/install.sh"
+	}
+	// "forwardPorts": [],
+	// "postCreateCommand": "bash .devcontainer/install.sh"
 }
