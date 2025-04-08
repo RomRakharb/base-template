@@ -4,8 +4,9 @@
 	"features": {
 		"ghcr.io/devcontainers/features/rust:1": {
 			"profile": "default"
-		}
-	}
-	// "forwardPorts": [],
-	// "postCreateCommand": "bash .devcontainer/install.sh"
+		},
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+	"forwardPorts": [],
+	"postCreateCommand": "echo 'To start: bash .devcontainer/install.sh'"
 }
