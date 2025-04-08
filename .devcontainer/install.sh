@@ -23,7 +23,6 @@ cargo install bacon --locked
 
 rustup component add rust-analyzer
 npm i -g vscode-langservers-extracted
-rustup target add wasm32-unknown-unknown
 
 mkdir -p ~/.helix
 echo '[[language]]
